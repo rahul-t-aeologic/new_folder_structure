@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../di.dart';
 import '../state_manager/state_manager.dart';
 import 'ps_widgets_binding_observer.dart';
 
@@ -27,7 +28,7 @@ class _BaseViewState<T extends StateManager<S>, S> extends State<BaseView<T, S>>
 
   @override
   void initState() {
-    //_viewModel = DI.instance.get<T>();
+    _viewModel = DI.instance.get<T>();
     widget.setupViewModel(_viewModel);
     super.initState();
     if (_viewModel is WidgetsBindingObserver) {

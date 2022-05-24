@@ -6,6 +6,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'core/app_logger/app_logger.dart';
 import 'core/flavor_config.dart';
+import 'features/feature_module.dart';
+import 'global_module.dart';
 
 class AppBlocObserver extends BlocObserver {
   @override
@@ -28,6 +30,9 @@ Future<void> bootstrap(
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
   };
+  for (var element in [GlobalModule(),FeatureModule()]) {
+    element.registerDependencies();
+  }
   await runZonedGuarded(
     () async {
       await BlocOverrides.runZoned(
