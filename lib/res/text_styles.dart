@@ -5,38 +5,6 @@ import 'colors.gen.dart';
 class AppTextStyles {
   AppTextStyles._();
 
-/*
- TextStyle? displayLarge,
-    TextStyle? displayMedium,
-    TextStyle? displaySmall,
-    TextStyle? headlineLarge,
-    TextStyle? headlineMedium,
-    TextStyle? headlineSmall,
-    TextStyle? titleLarge,
-    TextStyle? titleMedium,
-    TextStyle? titleSmall,
-    TextStyle? bodyLarge,
-    TextStyle? bodyMedium,
-    TextStyle? bodySmall,
-    TextStyle? labelLarge,
-    TextStyle? labelMedium,
-    TextStyle? labelSmall,
-
-
-    TextStyle? headline1,
-    TextStyle? headline2,
-    TextStyle? headline3,
-    TextStyle? headline4,
-    TextStyle? headline5,
-    TextStyle? headline6,
-    TextStyle? subtitle1,
-    TextStyle? subtitle2,
-    TextStyle? bodyText1,
-    TextStyle? bodyText2,
-    TextStyle? caption,
-    TextStyle? button,
-    TextStyle? overline,
-* */
   static TextStyle get t1 => const TextStyle(
         color: ColorName.black,
         fontWeight: FontWeight.w500,

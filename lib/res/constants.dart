@@ -1,6 +1,6 @@
 class Constants {
-  static const prodBaseUrl = 'Prod_Base_Url';
-  static var devBaseUrl = "Dev_Base_Url";
+  static const prodBaseUrl = 'PROD_BASE_URL';
+  static var devBaseUrl = "DEV_BASE_URL";
   static var bearer = 'bearer_token';
 
   //In seconds

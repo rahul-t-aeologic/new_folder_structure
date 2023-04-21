@@ -10,7 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp.router(
       routeInformationParser: NavigationHandler.routeInformationParser,
       routerDelegate: NavigationHandler.routerDelegate,
-      theme: FortyTwoTheme.theme,
+      theme: AppTheme.theme,
       // localizationsDelegates: const [
       //   AppLocalizations.delegate,
       //   GlobalMaterialLocalizations.delegate,

@@ -5,7 +5,7 @@ import 'package:new_folder_structure/res/dimens.dart';
 import '../../../core/base_view/base_view.dart';
 import '../../../res/colors.gen.dart';
 import '../state/development_state.dart';
-import '../view_model/colleges_view_model.dart';
+import '../view_model/development_view_model.dart';
 
 class DevelopmentScreen extends StatelessWidget {
   const DevelopmentScreen({Key? key}) : super(key: key);

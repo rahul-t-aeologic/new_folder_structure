@@ -5,8 +5,8 @@ import 'package:new_folder_structure/res/text_styles.dart';
 import 'colors.gen.dart';
 import 'dimens.dart';
 
-class FortyTwoTheme {
-  FortyTwoTheme._();
+class AppTheme {
+  AppTheme._();
 
   static ThemeData get theme {
     return ThemeData(
@@ -38,7 +38,7 @@ class FortyTwoTheme {
         elevation: 0,
         centerTitle: true,
         titleTextStyle: AppTextStyles.headline3,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: ColorName.primary,
           size: 20,
         ),
