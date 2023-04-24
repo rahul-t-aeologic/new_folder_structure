@@ -1,1 +1,0 @@
-enum Methods { get, post, patch, delete }
