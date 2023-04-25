@@ -32,7 +32,7 @@ class _BaseViewState<T extends StateManager<S>, S> extends State<BaseView<T, S>>
     widget.setupViewModel(_viewModel);
     super.initState();
     if (_viewModel is WidgetsBindingObserver) {
-      WidgetsBinding.instance?.addObserver(this);
+      WidgetsBinding.instance.addObserver(this);
     }
   }
 
@@ -53,7 +53,7 @@ class _BaseViewState<T extends StateManager<S>, S> extends State<BaseView<T, S>>
   @override
   void dispose() {
     if (_viewModel is PSWidgetsBindingObserver) {
-      WidgetsBinding.instance?.removeObserver(this);
+      WidgetsBinding.instance.removeObserver(this);
     }
     super.dispose();
   }
